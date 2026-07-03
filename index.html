@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayan - Anime & Movies</title>
-    <!-- Tailwind CSS for cool styling -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-950 text-white font-sans selection:bg-red-500 selection:text-white">
+<body class="bg-gray-950 text-white font-sans">
 
     <!-- Navbar -->
     <nav class="border-b border-gray-900 bg-gray-950/80 backdrop-blur sticky top-0 z-50 px-4 py-3 flex justify-between items-center">
@@ -19,43 +18,40 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <main class="max-w-4xl mx-auto px-4 py-8">
-        <div class="bg-gradient-to-r from-red-900 to-black rounded-2xl p-6 md:p-10 mb-8 border border-red-900/40 shadow-xl shadow-red-950/20">
-            <span class="text-xs font-bold uppercase tracking-widest text-red-400 bg-red-950/60 px-2.5 py-1 rounded-full border border-red-800/30">Trending</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold mt-3 mb-2">Explore the Ultimate Anime & Movie Hub</h2>
-            <p class="text-sm text-gray-300 max-w-md">Track your favorite series, discover sub/dub movies, and build your perfect watchlist.</p>
-            <button class="mt-5 bg-red-600 hover:bg-red-700 active:scale-95 text-sm font-semibold px-5 py-2.5 rounded-xl transition duration-200 shadow-lg shadow-red-600/20">
-                Browse Collection
-            </button>
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-6">
+        <!-- Trending Banner -->
+        <div class="bg-gradient-to-r from-red-950 via-red-900 to-black rounded-2xl p-6 mb-8 border border-red-900/30 shadow-xl shadow-red-950/10">
+            <span class="text-xs font-bold uppercase tracking-widest text-red-400 bg-red-950/60 px-2.5 py-1 rounded-full border border-red-800/30">Trending Now</span>
+            <h2 class="text-2xl font-extrabold mt-3 mb-2">Tokyo Revengers</h2>
+            <p class="text-xs text-gray-300 max-w-md">Takemichi Hanagaki continues his time-leaping journey to save Hinata and rewrite the fate of the Tokyo Manji Gang.</p>
+            <button class="mt-4 bg-red-600 hover:bg-red-700 text-xs font-semibold px-4 py-2.5 rounded-xl shadow-lg shadow-red-600/20">Watch Trailer</button>
         </div>
 
-        <!-- Latest Releases Grid Heading -->
-        <div class="flex justify-between items-center mb-4">
-            <h3 class="text-lg font-bold tracking-wide">Latest Spotlight</h3>
-            <span class="text-xs text-red-500 hover:underline cursor-pointer">See All</span>
-        </div>
-
-        <!-- Placeholder Cards Grid -->
-        <div class="grid grid-cols-2 gap-4">
-            <!-- Card 1 -->
-            <div class="bg-gray-900 border border-gray-800 rounded-xl p-3 hover:border-red-500/40 transition duration-300 cursor-pointer group">
-                <div class="aspect-[16/10] bg-gray-800 rounded-lg mb-3 flex items-center justify-center border border-gray-700 overflow-hidden group-hover:opacity-80 transition">
-                    <span class="text-2xl">🎬</span>
+        <!-- Anime Section -->
+        <div class="mb-8">
+            <h3 class="text-lg font-bold tracking-wide border-l-4 border-red-500 pl-2 mb-4">Trending Anime</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Tokyo Revengers Card -->
+                <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.justwatch.com/poster/245340156/s332/tokyo-revengers.webp" class="w-full aspect-[2/3] object-cover">
+                    <div class="p-2.5">
+                        <h4 class="font-bold text-xs truncate">Tokyo Revengers</h4>
+                        <p class="text-[10px] text-gray-400 mt-0.5">⭐ 8.0 | Action</p>
+                    </div>
                 </div>
-                <h4 class="font-bold text-sm truncate">Top Action Series</h4>
-                <p class="text-xs text-gray-400 mt-0.5">Updated 2 days ago</p>
-            </div>
-            <!-- Card 2 -->
-            <div class="bg-gray-900 border border-gray-800 rounded-xl p-3 hover:border-red-500/40 transition duration-300 cursor-pointer group">
-                <div class="aspect-[16/10] bg-gray-800 rounded-lg mb-3 flex items-center justify-center border border-gray-700 overflow-hidden group-hover:opacity-80 transition">
-                    <span class="text-2xl">🔥</span>
+                <!-- Chainsaw Man Card -->
+                <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.justwatch.com/poster/300438138/s332/chainsaw-man.webp" class="w-full aspect-[2/3] object-cover">
+                    <div class="p-2.5">
+                        <h4 class="font-bold text-xs truncate">Chainsaw Man</h4>
+                        <p class="text-[10px] text-gray-400 mt-0.5">⭐ 8.4 | Dark Fantasy</p>
+                    </div>
                 </div>
-                <h4 class="font-bold text-sm truncate">Trending Anime</h4>
-                <p class="text-xs text-gray-400 mt-0.5">New Episodes Live</p>
             </div>
         </div>
     </main>
 
 </body>
 </html>
+
