@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayan Anime</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #030712; color: white; font-family: sans-serif; padding: 20px; }
+        .nav { border-bottom: 1px solid #1f2937; padding-bottom: 15px; display: flex; justify-content: space-between; }
+        .red-text { color: #ef4444; font-weight: 900; font-size: 20px; }
+        .card-container { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .card { background-color: #111827; border-radius: 10px; overflow: hidden; border: 1px solid #374151; }
+        .placeholder { height: 150px; background-color: #374151; display: flex; align-items: center; justify-content: center; }
+        .title { padding: 10px; font-size: 12px; font-weight: bold; }
+    </style>
 </head>
-<body class="bg-gray-950 text-white p-4 font-sans">
-    <nav class="border-b border-gray-900 pb-3 mb-6 flex justify-between items-center">
-        <h1 class="text-xl font-black text-red-500">RAYAN</h1>
-        <div class="space-x-4 text-sm text-gray-400"><a href="#">Home</a><a href="#">Anime</a></div>
-    </nav>
-    <div class="bg-gradient-to-r from-red-950 to-black rounded-xl p-5 mb-6 border border-red-900/40">
-        <span class="text-xs font-bold uppercase tracking-widest text-red-400">Trending</span>
-        <h2 class="text-2xl font-black mt-2">Tokyo Revengers</h2>
-        <p class="text-xs text-gray-300 mt-1">Takemichi travels back in time to save Hinata and rewrite the fate of Toman.</p>
+<body>
+    <div class="nav">
+        <div class="red-text">RAYAN</div>
+        <div>Home | Anime</div>
     </div>
-    <h3 class="text-lg font-bold border-l-4 border-red-500 pl-2 mb-4">Trending Anime</h3>
-    <div class="grid grid-cols-2 gap-4">
-        <!-- Tokyo Revengers (Permanent Wikimedia Link) -->
-        <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Tokyo_Revengers_Logo.png" class="w-full aspect-[2/3] object-contain p-4 bg-gray-900">
-            <div class="p-2"><h4 class="font-bold text-xs truncate">Tokyo Revengers</h4><p class="text-[10px] text-gray-400">⭐ 8.0</p></div>
+    <div style="background: #450a0a; padding: 20px; border-radius: 10px; margin-top: 20px;">
+        <h2 style="margin: 0; color: #fca5a5;">Tokyo Revengers</h2>
+        <p style="font-size: 12px;">Takemichi travels back in time to save Hinata.</p>
+    </div>
+    <h3 style="margin-top: 30px;">Trending Anime</h3>
+    <div class="card-container">
+        <div class="card">
+            <div class="placeholder">TOKYO REVENGERS</div>
+            <div class="title">Tokyo Revengers</div>
         </div>
-        <!-- Chainsaw Man (Stable Unsplash Illustration Link) -->
-        <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden shadow-lg">
-            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500&auto=format&fit=crop&q=80" class="w-full aspect-[2/3] object-cover">
-            <div class="p-2"><h4 class="font-bold text-xs truncate">Chainsaw Man</h4><p class="text-[10px] text-gray-400">⭐ 8.4</p></div>
+        <div class="card">
+            <div class="placeholder">CHAINSAW MAN</div>
+            <div class="title">Chainsaw Man</div>
         </div>
     </div>
 </body>
