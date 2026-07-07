@@ -36,8 +36,8 @@
             margin: 0 auto;
         }
         .hero-banner {
-            background: linear-gradient(rgba(17, 24, 39, 0.6), rgba(11, 15, 25, 1)), url('https://images.alphacoders.com/131/1311749.jpeg') no-repeat center center/cover;
-            height: 250px;
+            background: linear-gradient(rgba(17, 24, 39, 0.7), rgba(11, 15, 25, 1)), url('https://i.imgur.com/bWb88sX.jpeg') no-repeat center center/cover;
+            height: 220px;
             border-radius: 12px;
             display: flex;
             flex-direction: column;
@@ -49,7 +49,7 @@
         .hero-banner h2 {
             margin: 0 0 5px 0;
             color: #ef4444;
-            font-size: 28px;
+            font-size: 26px;
         }
         .hero-banner p {
             margin: 0;
@@ -65,8 +65,8 @@
         }
         .anime-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
             margin-bottom: 40px;
         }
         .anime-card {
@@ -74,14 +74,12 @@
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid #1f2937;
-            transition: transform 0.2s;
-        }
-        .anime-card:active {
-            transform: scale(0.95);
+            display: flex;
+            flex-direction: column;
         }
         .anime-card img {
             width: 100%;
-            height: 220px;
+            height: 200px;
             object-fit: cover;
         }
         .anime-info {
@@ -91,9 +89,6 @@
             margin: 0 0 5px 0;
             font-size: 14px;
             color: #ffffff;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
         .anime-info p {
             margin: 0;
@@ -110,7 +105,6 @@
     </header>
 
     <div class="container">
-        <!-- Hero Spotlight Banner -->
         <div class="hero-banner">
             <h2>Tokyo Revengers</h2>
             <p>Takemichi Hanagaki travels back in time to save his friends and change the future.</p>
@@ -118,36 +112,32 @@
 
         <h3>Trending Anime</h3>
         <div class="anime-grid">
-            <!-- Card 1: Tokyo Revengers -->
             <div class="anime-card">
-                <img src="https://images.alphacoders.com/114/1146604.jpg" alt="Tokyo Revengers">
+                <img src="https://i.imgur.com/7S8V2V6.jpeg" alt="Tokyo Revengers">
                 <div class="anime-info">
                     <h4>Tokyo Revengers</h4>
                     <p>Action / Sci-Fi</p>
                 </div>
             </div>
 
-            <!-- Card 2: Chainsaw Man -->
             <div class="anime-card">
-                <img src="https://images.alphacoders.com/128/1281260.png" alt="Chainsaw Man">
+                <img src="https://i.imgur.com/K6b9FhS.jpeg" alt="Chainsaw Man">
                 <div class="anime-info">
                     <h4>Chainsaw Man</h4>
                     <p>Dark Fantasy</p>
                 </div>
             </div>
 
-            <!-- Card 3: Dragon Ball Super -->
             <div class="anime-card">
-                <img src="https://images.alphacoders.com/605/605791.jpg" alt="Dragon Ball Super">
+                <img src="https://i.imgur.com/vH97Z9L.jpeg" alt="Dragon Ball Super">
                 <div class="anime-info">
                     <h4>Dragon Ball Super</h4>
                     <p>Action / Shounen</p>
                 </div>
             </div>
 
-            <!-- Card 4: Death Note -->
             <div class="anime-card">
-                <img src="https://images.alphacoders.com/936/936836.jpg" alt="Death Note">
+                <img src="https://i.imgur.com/pZ84vGz.jpeg" alt="Death Note">
                 <div class="anime-info">
                     <h4>Death Note</h4>
                     <p>Psychological Thriller</p>
