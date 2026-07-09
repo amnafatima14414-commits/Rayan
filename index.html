@@ -1,154 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rayan Anime</title>
-    <style>
-        body {
-            background-color: #0b0f19;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #111827;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #ef4444;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #ef4444;
-            letter-spacing: 1px;
-        }
-        .nav-links {
-            font-size: 14px;
-            color: #9ca3af;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .hero-banner {
-            background: linear-gradient(rgba(17, 24, 39, 0.6), rgba(11, 15, 25, 1)), url('https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800') no-repeat center center/cover;
-            height: 180px;
-            border-radius: 12px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 20px;
-            margin-bottom: 30px;
-            border: 1px solid #ef4444;
-        }
-        .hero-banner h2 {
-            margin: 0 0 5px 0;
-            color: #ef4444;
-            font-size: 26px;
-        }
-        .hero-banner p {
-            margin: 0;
-            color: #d1d5db;
-            font-size: 14px;
-        }
-        h3 {
-            color: #ffffff;
-            font-size: 20px;
-            margin-bottom: 20px;
-            border-left: 4px solid #ef4444;
-            padding-left: 10px;
-        }
-        .anime-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-bottom: 40px;
-        }
-        .anime-card {
-            background-color: #111827;
-            border-radius: 10px;
-            overflow: hidden;
-            border: 1px solid #1f2937;
-            display: flex;
-            flex-direction: column;
-        }
-        .anime-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-        .anime-info {
-            padding: 12px;
-        }
-        .anime-info h4 {
-            margin: 0 0 5px 0;
-            font-size: 14px;
-            color: #ffffff;
-        }
-        .anime-info p {
-            margin: 0;
-            font-size: 12px;
-            color: #9ca3af;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Rayan Anime</title>
+<style>
+body{margin:0;background:#0b0f19;color:#fff;font-family:Arial}
+header{background:#111827;padding:16px;border-bottom:2px solid #e11d48}
+h1{margin:0;color:#e11d48}
+.container{padding:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
+.card{background:#1a2235;border-radius:10px;overflow:hidden}
+.card img{width:100%;height:260px;object-fit:cover;background:#333}
+.info{padding:10px}
+.hero{padding:40px;background:#222;text-align:center;border-radius:12px;margin-bottom:20px}
+</style>
 </head>
 <body>
-
-    <header>
-        <h1>RAYAN</h1>
-        <div class="nav-links">Home | Anime</div>
-    </header>
-
-    <div class="container">
-        <div class="hero-banner">
-            <h2>Tokyo Revengers</h2>
-            <p>Takemichi Hanagaki travels back in time to save his friends and change the future.</p>
-        </div>
-
-        <h3>Trending Anime</h3>
-        <div class="anime-grid">
-            <!-- Card 1: Tokyo Revengers -->
-            <div class="anime-card">
-                <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500" alt="Tokyo Revengers">
-                <div class="anime-info">
-                    <h4>Tokyo Revengers</h4>
-                    <p>Action / Sci-Fi</p>
-                </div>
-            </div>
-
-            <!-- Card 2: Chainsaw Man -->
-            <div class="anime-card">
-                <img src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?w=500" alt="Chainsaw Man">
-                <div class="anime-info">
-                    <h4>Chainsaw Man</h4>
-                    <p>Dark Fantasy</p>
-                </div>
-            </div>
-
-            <!-- Card 3: Dragon Ball Super -->
-            <div class="anime-card">
-                <img src="https://images.unsplash.com/photo-1627337369538-09ac10231d71?w=500" alt="Dragon Ball Super">
-                <div class="anime-info">
-                    <h4>Dragon Ball Super</h4>
-                    <p>Action / Shounen</p>
-                </div>
-            </div>
-
-            <!-- Card 4: Death Note -->
-            <div class="anime-card">
-                <img src="https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=500" alt="Death Note">
-                <div class="anime-info">
-                    <h4>Death Note</h4>
-                    <p>Psychological Thriller</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<header><h1>RAYAN ANIME</h1></header>
+<div class="container">
+<div class="hero"><h2>Welcome to Rayan Anime</h2><p>Replace the image files in the images folder.</p></div>
+<div class="grid">
+<div class="card"><img src="images/tokyo-revengers.jpg"><div class="info"><h3>Tokyo Revengers</h3><p>Action / Sci‑Fi</p></div></div>
+<div class="card"><img src="images/chainsaw-man.jpg"><div class="info"><h3>Chainsaw Man</h3><p>Dark Fantasy</p></div></div>
+<div class="card"><img src="images/dragon-ball-super.jpg"><div class="info"><h3>Dragon Ball Super</h3><p>Action / Shounen</p></div></div>
+<div class="card"><img src="images/death-note.jpg"><div class="info"><h3>Death Note</h3><p>Psychological Thriller</p></div></div>
+</div>
+</div>
 </body>
 </html>
