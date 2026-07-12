@@ -116,6 +116,21 @@ footer{text-align:center;padding:20px;color:#777}
 <footer>
 © 2026 Rayan Anime
 </footer>
+<script>
+function searchAnime() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let cards = document.querySelectorAll(".card");
 
+  cards.forEach(card => {
+    let title = card.querySelector("h3").innerText.toLowerCase();
+
+    if (title.includes(input)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+</script>
 </body>
 </html>
